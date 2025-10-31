@@ -11,7 +11,7 @@ export default function TodoForm({ addTodo }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todo-form">
       <input
         type="text"
         placeholder="Add a new todo..."

@@ -7,8 +7,8 @@ export default function App() {
   const { todos, addTodo, toggleTodo, deleteTodo, editTodo } = useTodos();
 
   return (
-    <div style={{ maxWidth: "400px", margin: "50px auto", textAlign: "center" }}>
-      <h1>Todo App</h1>
+    <div className="App">
+      <h2 className="App-title">Todo App</h2>
       <TodoForm addTodo={addTodo} />
       <TodoList
         todos={todos}
@@ -16,6 +16,8 @@ export default function App() {
         deleteTodo={deleteTodo}
         editTodo={editTodo}
       />
+      <hr />
+      <p className="footer">Made with ❤️ by Dev and DevOps.</p>
     </div>
   );
 }

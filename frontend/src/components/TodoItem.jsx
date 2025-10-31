@@ -36,8 +36,8 @@ export default function TodoItem({ todo, toggleTodo, deleteTodo, editTodo }) {
           >
             {todo.text}
           </span>
-          <button onClick={() => setIsEditing(true)}>Edit</button>
-          <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+          <button onClick={() => setIsEditing(true)} className="editBtn">✎</button>
+          <button onClick={() => deleteTodo(todo.id)} className="dltBtn">✗</button>
         </>
       )}
     </li>

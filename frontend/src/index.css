@@ -26,14 +26,12 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  place-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #292b20;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
@@ -65,4 +63,93 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.App {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+.App-title {
+  font-size: 40px;
+  color: #efff08;
+  text-align: center;
+  margin: 0;
+}
+
+
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.todo-form input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+ .todo-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #efff08;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+.todo-form button:hover {
+  background-color: #e0ee18;
+}
+
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todo-list li {
+  background-color: #2a2a2a;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list li:hover {
+  background-color: #3a3a3a;
+}
+.todo-list li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+.editBtn, .dltBtn {
+  margin-left: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+  background: none;
+}
+.editBtn:hover {
+  background-color: #efff08;
+  color: rgb(0, 0, 0);
+}
+.dltBtn:hover {
+  background-color: #f32424;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  color: gray;
+  margin-top: 20px;
+  font-size: 12px;
+
 }

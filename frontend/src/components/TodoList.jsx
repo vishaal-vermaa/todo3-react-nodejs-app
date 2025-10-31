@@ -5,7 +5,7 @@ export default function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
   if (todos.length === 0) return <p>No todos yet!</p>;
 
   return (
-    <ul>
+    <ul className="todo-list">
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}

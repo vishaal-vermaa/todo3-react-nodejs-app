@@ -2,7 +2,20 @@
 import { useEffect, useState } from "react";
 
 export default function useTodos() {
-  const [todos, setTodos] = useState([]);
+  
+  // uncomment below line to enable state management
+  // const [todos, setTodos] = useState([]);
+  // end comment
+
+
+
+  // comment below line to enable state management
+  const todos = [
+    { id: 1, text: "Learn React", completed: false },
+    { id: 2, text: "Build a Todo App", completed: true },
+    { id: 3, text: "Master Hooks", completed: false },
+  ]
+  // end comment
 
   useEffect(() => {
     const fetchTodos = async () => {
